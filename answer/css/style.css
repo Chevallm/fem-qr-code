@@ -1,0 +1,64 @@
+html {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --blue-grey: hsl(212, 45%, 89%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-VariableFont_wght.ttf');
+}
+
+.qr-code {
+    width: 288px;
+    border-radius: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit';
+    font-size: 15px;
+    background-color: var(--blue-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 16px;
+    border-radius: 20px;
+    box-sizing: content-box;
+    width: 288px;
+    height: fit-content;
+}
+
+.card-content {
+    text-align: center;
+    padding: 5px;
+    margin: 1em 0;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 25px;
+    color: hsl(219, 35%, 21%);
+}
+
+.card-body {
+    margin-top: 1em;
+    font-weight: 400;
+    color: var(--grayish-blue)
+}
+
+@media only screen and (min-width: 376px) {
+    .qr-code {
+        width: 320px;
+    }
+
+    .card {
+        width: 320px;
+    }
+}
